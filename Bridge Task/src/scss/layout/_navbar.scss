@@ -1,0 +1,103 @@
+#navbar1 {
+    width: 100%;
+    height: 33px;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    @media (max-width:768px){
+        display: none;
+      }
+  .container {
+    .row {
+      .col-lg-6 {
+        width: 50%;
+        .folow_us {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          h1 {
+            @include Text(11px,none,$text_color,700,center,0,0);
+          }
+          .icon {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            img {
+              @include img(15px,15px,cover,0,0,pointer)
+            }
+          }
+        }
+      }
+      .col-lg-6{        
+        .link{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 20px;
+                li{
+                    a{
+                        @include Text(11px,none,$text_color,700,center,0,0);
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}
+#navbar2{
+    width: 100%;
+    height: 93px;
+    @media (max-width:768px){
+        display: none;
+      }
+    .container{
+        .row{
+            display: flex;
+            .col-lg-6 {
+                width: 50%;
+                height: 93px;
+             .left{
+                height: 93px;
+                display: flex;
+                align-items: center;
+                img{
+                    @include img(115px,40px,cover,0,0,pointer)
+                }
+             }
+             
+            }
+            .col-lg-6{
+                width: 50%;
+                height: 93px;
+                .right{
+                    height: 93px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        gap: 30px;
+                        li{
+                            a{
+                                @include Text(12px,none,$text_color2,500,center,0,0);
+                                &:hover{
+                                    color: black;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+             
+            }
+        }
+    }
+}
